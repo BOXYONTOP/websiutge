@@ -1,0 +1,34 @@
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Beautiful landscape with sun rays shining" tabindex="0" />
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Candid event photography capturing joy" tabindex="0" />
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Macro photo of flower petal" tabindex="0" />
+      </div>
+    </section>
+    <section aria-label="Booking information and appointment form">
+      <h2 class="section-title">Book Your Appointment</h2>
+      <p class="booking-info">Each photography session lasts <strong>120 minutes</strong>. Please choose your preferred date, time, and location below. Sessions are available from 9:00 AM to 6:00 PM daily. We recommend booking at least 48 hours in advance.</p>
+      <form id="bookingForm" aria-label="Appointment booking form" novalidate>
+        <label for="name">Full Name<span aria-hidden="true" style="color: var(--accent-color);">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+        <label for="email">Email Address<span aria-hidden="true" style="color: var(--accent-color);">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+        <label for="phone">Phone Number<span aria-hidden="true" style="color: var(--accent-color);">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 555 555 5555" autocomplete="tel" required />
+        <label for="location">Preferred Meeting Location<span aria-hidden="true" style="color: var(--accent-color);">*</span></label>
+        <textarea id="location" name="location" rows="2" placeholder="Where would you like the session to take place?" required></textarea>
+        <label for="date">Choose a Date<span aria-hidden="true" style="color: var(--accent-color);">*</span></label>
+        <input type="date" id="date" name="date" required min="" aria-describedby="dateHelp" />
+        <label for="time">Choose a Start Time<span aria-hidden="true" style="color: var(--accent-color);">*</span></label>
+        <input type="time" id="time" name="time" required step="1800" min="09:00" max="18:00" aria-describedby="timeHelp" />
+        <small id="dateHelp" style="display:block; margin-bottom:1rem; color: var(--secondary-color); font-size: 0.85rem;">Sessions available daily 9 AM - 6 PM.</small>
+        <small id="timeHelp" style="display:block; margin-bottom:1.5rem; color: var(--secondary-color); font-size: 0.85rem;">Start times are every 30 minutes; session lasts 120 minutes.</small>
+        <button type="submit">Proceed to Payment</button>
+        <div class="confirmation" id="confirmationMessage" role="alert"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Artistry Photography. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
